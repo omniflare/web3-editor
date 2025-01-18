@@ -7,7 +7,7 @@ import { Select, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 
 import Example from "@/components/Example";
-import thirdwebIcon from "@/public/thirdweb.svg";
+import thirdwebIcon from "@/../public/thirdweb.svg";
 import Image from "next/image";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -35,8 +35,8 @@ const Navbar = () => (
   <nav className="flex items-center justify-between p-4 max-w-7xl mx-auto">
     <div className="flex items-center">
       <h1 className="text-2xl font-bold">
-        <span className="text-black">J</span>
-        <span className="text-orange-500">obbbly</span>
+        <span className="text-black">K</span>
+        <span className="text-orange-500">arya proof</span>
       </h1>
     </div>
     <div className="flex space-x-6">
@@ -46,6 +46,7 @@ const Navbar = () => (
       <a href="#" className="text-gray-600">Blog</a>
     </div>
     <div className="flex space-x-4">
+      <Example/>
       <Button variant="ghost">Sign in</Button>
       <Button className="bg-[#38BDF8]">Sign Up</Button>
     </div>
@@ -123,7 +124,7 @@ const MainContent = () => (
   <div className="relative flex justify-between items-center max-w-7xl mx-auto px-4 py-16">
     <div className="w-1/2">
       <h1 className="text-5xl font-bold mb-4">
-        It's Easy to Find<br />
+        It&apos;s Easy to Find<br />
         Your <span className="text-orange-500">Dream Job</span>
       </h1>
       <p className="text-gray-600 mb-8">
