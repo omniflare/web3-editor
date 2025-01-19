@@ -1,7 +1,7 @@
 import React from "react";
 
 const Features: React.FC = () => (
-  <section className="bg-gray-100 py-16">
+  <section className=" py-16">
     <div className="container mx-auto px-4 text-center">
       <h2 className="text-5xl font-bold mb-12">Why Choose Us?</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -9,7 +9,7 @@ const Features: React.FC = () => (
         <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-8 h-80">
           {/* Icon Placeholder */}
           <div className="w-20 h-20 bg-blue-100 flex items-center justify-center rounded-full mb-6">
-            {/* Replace with <ThirdwebIcon /> */}
+            
             <span className="text-blue-500 text-4xl font-bold">T</span>
           </div>
           <h3 className="text-2xl font-semibold mb-4">Reliable Technology</h3>
