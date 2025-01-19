@@ -6,7 +6,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <Example />
+    <div>
+       hello there
+       <Example />
+
+    </div>
+   
   );
 }
 
