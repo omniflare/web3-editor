@@ -4,10 +4,10 @@ import Example from "@/components/Example";
 import thirdwebIcon from "@public/thirdweb.svg";
 import Image from "next/image";
 
+
 export default function Home() {
   return (
     <div>
-       hello there
        <Example />
 
     </div>

@@ -1,33 +1,37 @@
+
+
 import { createThirdwebClient } from "thirdweb";
 import { ConnectButton } from "thirdweb/react";
 
 import {
-    inAppWallet,
-    createWallet,
+  inAppWallet,
+  createWallet,
 } from "thirdweb/wallets";
 
 const client = createThirdwebClient({
-    clientId: "....",
+  clientId: "....",
 });
 
 const wallets = [
-    inAppWallet({
-        auth: {
-            options: ["email", "x", "passkey", "phone", "google"],
-        },
-    }),
-    createWallet("io.metamask"),
-    createWallet("com.coinbase.wallet"),
-    createWallet("io.rabby"),
-    createWallet("io.zerion.wallet"),
+  inAppWallet({
+    auth: {
+      options: ["google", "email", "github"],
+    },
+  }),
+  createWallet("io.metamask"),
+  createWallet("app.phantom"),
+  createWallet("com.coinbase.wallet"),
 ];
 
 export default function Example() {
-    return (
-        <ConnectButton
-            client={client}
-            wallets={wallets}
-            connectModal={{ size: "compact" }}
-        />
-    );
+  return (
+    <ConnectButton
+      client={client}
+      wallets={wallets}
+      connectModal={{
+        size: "compact",
+        showThirdwebBranding: false,
+      }}
+    />
+  );
 }
